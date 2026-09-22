@@ -26,7 +26,7 @@ const Layout = () => {
       <header className="site-header">
         <div className="container header-main">
           <NavLink to="/" className="brand" aria-label="PRIME SERVIÇOS - Início">
-            <img className="brand-logo" src="/logo-prime.jpg" alt="PRIME SERVIÇOS" />
+            <img className="brand-logo" src="/logo-prime-nova.jpg" alt="PRIME SERVIÇOS" />
           </NavLink>
 
           <nav className="desktop-nav" aria-label="Navegação principal">

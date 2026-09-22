@@ -22,14 +22,14 @@ export const galleries = {
  residencial:[
   {src:"/images/residencial/residencial-01.jpg",title:"Instalação elétrica residencial"},{src:"/images/residencial/residencial-02.jpg",title:"Manutenção de tomadas e interruptores"},{src:"/images/residencial/residencial-03.jpg",title:"Serviço elétrico residencial"},{src:"/images/residencial/residencial-04.jpg",title:"Acabamento e instalação"},{src:"/images/residencial/residencial-05.jpg",title:"Adequação elétrica"},{src:"/images/residencial/residencial-06.jpeg",title:"Quadro de distribuição residencial"},{src:"/images/residencial/residencial-07.jpeg",title:"Disjuntores e proteção elétrica"}],
  industrial:[
-  {src:"/images/industrial/industrial-01.jpg",title:"Painel e instrumentação industrial"},{src:"/images/industrial/industrial-02.jpg",title:"Instrumentação e tubulação"},{src:"/images/industrial/industrial-03.jpg",title:"Manutenção industrial"},{src:"/images/industrial/industrial-04.jpg",title:"Painel elétrico industrial"},{src:"/images/industrial/industrial-05.jpg",title:"Comandos e alimentação"},{src:"/images/industrial/industrial-profissional.jpg",title:"Atuação em ambiente industrial"}],
+  {src:"/images/industrial/industrial-01.jpg",title:"Painel antigo"},{src:"/images/industrial/industrial-02.jpg",title:"Instrumentação e tubulação"},{src:"/images/industrial/industrial-03.jpg",title:"Novo painel"},{src:"/images/industrial/industrial-04.jpg",title:"Substituição de fontes"},{src:"/images/industrial/industrial-05.jpg",title:"Novas fontes instaladas"},{src:"/images/industrial/industrial-profissional.jpg",title:"Atuação em ambiente industrial"}],
  computadores:[
   {src:"/images/computadores/pc-01.jpg",title:"Setup completo"},{src:"/images/computadores/pc-02.jpg",title:"Montagem interna"},{src:"/images/computadores/pc-03.jpg",title:"PC com iluminação RGB"},{src:"/images/computadores/pc-04.jpg",title:"Configuração e testes"},{src:"/images/computadores/pc-05.jpg",title:"Montagem gamer"},{src:"/images/computadores/pc-06.jpg",title:"Organização e refrigeração"}]
 };
 export const residentialVideos = [
  {src:"/videos/residencial/residencial-28.mp4",title:"Serviço elétrico residencial"},
- {src:"/videos/residencial/residencial-30.mp4",title:"Execução de trabalho residencial"},
- {src:"/videos/residencial/residencial-36.mp4",title:"Instalação elétrica residencial"},
+ {src:"/videos/residencial/residencial-30.mp4",title:"Execução de montagem de rede de internet"},
+ {src:"/videos/residencial/residencial-36.mp4",title:"Testando cabo de rede de internet"},
  {src:"/videos/residencial/residencial-39.mp4",title:"Manutenção elétrica residencial"},
  {src:"/videos/residencial/residencial-46.mp4",title:"Trabalho residencial finalizado"}
 ];
