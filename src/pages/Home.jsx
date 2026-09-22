@@ -69,7 +69,7 @@ const Home = () => {
           <div className="service-grid">
             {services.map((service, index) => {
               const Icon = iconFor[service.icon];
-              return <article className={`service-card reveal service-card-${service.id}`}` style={{ "--delay": `${index * 90}ms` }} key={service.id}>
+              return <article className={`service-card reveal service-card-${service.id}`} style={{ "--delay": `${index * 90}ms` }} key={service.id}>
                 <div className="service-icon"><Icon /></div>
                 <span className="service-index">0{index + 1}</span>
                 <h3>{service.title}</h3>
@@ -117,3 +117,4 @@ const Home = () => {
   );
 };
 export default Home;
+
