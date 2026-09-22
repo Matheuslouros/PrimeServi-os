@@ -26,7 +26,7 @@ const Layout = () => {
       <header className="site-header">
         <div className="container header-main">
           <NavLink to="/" className="brand" aria-label="PRIME SERVIÇOS - Início">
-            <img className="brand-logo" src="/logo-prime.svg" alt="PRIME SERVIÇOS" />
+            <img className="brand-logo" src="/logo-prime.jpg" alt="PRIME SERVIÇOS" />
           </NavLink>
 
           <nav className="desktop-nav" aria-label="Navegação principal">
@@ -64,7 +64,7 @@ const Layout = () => {
         <div className="container footer-contact-grid">
           <div><MessageCircle /><strong>Atendimento direto</strong><span>Fale com a PRIME pelo WhatsApp</span></div>
           <a href={whatsapp} target="_blank" rel="noopener noreferrer"><Phone /><strong>{siteInfo.phone}</strong><span>Solicite seu orçamento</span></a>
-          <div><Zap /><strong>Elétrica + Tecnologia</strong><span>Residencial, comercial e industrial</span></div>
+          <div><Zap /><strong>Elétrica + Tecnologia</strong><span>Residencial, industrial e computação</span></div>
         </div>
       </section>
 

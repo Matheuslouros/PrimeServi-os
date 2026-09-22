@@ -69,7 +69,7 @@ const Home = () => {
           <div className="service-grid">
             {services.map((service, index) => {
               const Icon = iconFor[service.icon];
-              return <article className={`service-card reveal ${service.id === "computadores" ? "service-card-tech" : ""}`} style={{ "--delay": `${index * 90}ms` }} key={service.id}>
+              return <article className={`service-card reveal service-card-${service.id}`}` style={{ "--delay": `${index * 90}ms` }} key={service.id}>
                 <div className="service-icon"><Icon /></div>
                 <span className="service-index">0{index + 1}</span>
                 <h3>{service.title}</h3>
@@ -89,7 +89,7 @@ const Home = () => {
             <h2>Do projeto elétrico ao setup do seu computador.</h2>
             <p>A proposta é reunir serviços técnicos diferentes em uma única marca, com comunicação simples e foco em organização, manutenção e acabamento.</p>
             <ul className="check-list"><li><CheckCircle2 /> Atendimento residencial e industrial</li><li><CheckCircle2 /> Montagem e manutenção de computadores</li><li><CheckCircle2 /> Organização de cabos e componentes</li><li><CheckCircle2 /> Orçamento pelo WhatsApp</li></ul>
-            <Link to="/sobre-nos" className="btn btn-dark">Conheça a PRIME <ArrowRight /></Link>
+            <Link to="/servicos#sobre" className="btn btn-dark">Conheça a PRIME <ArrowRight /></Link>
           </div>
           <div className="feature-panel reveal reveal-delay-1"><div className="panel-grid" /><Zap className="panel-zap" /><span>ENERGIA</span><strong>+ TECNOLOGIA</strong><small>Uma solução para cada necessidade.</small></div>
         </div>
@@ -97,7 +97,7 @@ const Home = () => {
 
       <section className="section section-gallery tech-section">
         <div className="container">
-          <div className="section-heading reveal"><span className="section-kicker">Computação • Tecnologia</span><h2>Um ambiente diferente para a sua tecnologia.</h2><p>Nesta área, a identidade visual muda para um clima mais tecnológico, destacando montagem, manutenção e setups de computadores.</p></div>
+          <div className="section-heading reveal"><span className="section-kicker">Computação • Tecnologia</span><h2>Computação também é serviço PRIME.</h2><p>Montagem, manutenção, upgrades, configuração e organização de computadores e setups.</p></div>
           <div className="gallery-grid">
             {computerGallery.map((image, index) => <figure className="gallery-item reveal" style={{ "--delay": `${index * 70}ms` }} key={image.src}><img src={image.src} alt={image.title} loading="lazy" /><figcaption><span>{image.category}</span><strong>{image.title}</strong></figcaption></figure>)}
           </div>
