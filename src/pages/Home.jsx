@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Factory, Home as HomeIcon, Monitor, Phone, ShieldCheck, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, Factory, Home as HomeIcon, Monitor, ShieldCheck, Sparkles, Zap } from "lucide-react";
 import { computerGallery, processSteps, services, siteInfo } from "../mock";
 
 const iconFor = { home: HomeIcon, factory: Factory, monitor: Monitor };
@@ -34,22 +34,14 @@ const Home = () => {
             <h1>Energia, tecnologia e <span>soluções</span> para o seu projeto.</h1>
             <p>Serviços elétricos residenciais e industriais, além de montagem e manutenção de computadores. Um atendimento direto, organizado e pensado para cada necessidade.</p>
             <div className="hero-actions">
-              <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><Phone /> Pedir orçamento</a>
+              <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><img className="whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /> Pedir orçamento</a>
               <Link to="/servicos" className="btn btn-ghost">Ver serviços <ArrowRight /></Link>
             </div>
             <div className="hero-trust"><span><ShieldCheck /> Execução cuidadosa</span><span><Sparkles /> Organização</span><span><Zap /> Soluções práticas</span></div>
           </div>
 
           <div className="hero-visual reveal reveal-delay-1">
-            <div className="tech-card">
-              <div className="tech-card-glow" />
-              <div className="tech-lines" />
-              <div className="tech-icon"><Zap /></div>
-              <span>PRIME</span>
-              <strong>SERVIÇOS</strong>
-              <small>ELÉTRICA • TECH • MANUTENÇÃO</small>
-              <div className="tech-chip-row"><i /><i /><i /><i /></div>
-            </div>
+            <div className="hero-logo-card"><img src="/logo-prime-nova.jpg" alt="Prime Serviços" /></div>
           </div>
         </div>
       </section>
@@ -75,7 +67,7 @@ const Home = () => {
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
                 <ul>{service.bullets.map((bullet) => <li key={bullet}><CheckCircle2 />{bullet}</li>)}</ul>
-                <Link to="/servicos" className="service-link">Saiba mais <ArrowRight /></Link>
+                <Link to={`/servicos#trabalhos-${service.id}`} className="service-link">Ver trabalhos <ArrowRight /></Link>
               </article>;
             })}
           </div>
@@ -112,9 +104,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="cta-section reveal"><div className="container cta-inner"><div><span className="section-kicker light">Vamos começar?</span><h2>Precisa de um serviço elétrico ou técnico?</h2><p>Envie uma mensagem e conte o que você precisa. A PRIME SERVIÇOS orienta você pelo WhatsApp.</p></div><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large"><Phone /> {siteInfo.phone}</a></div></section>
+      <section className="cta-section reveal"><div className="container cta-inner"><div><span className="section-kicker light">Vamos começar?</span><h2>Precisa de um serviço elétrico ou técnico?</h2><p>Envie uma mensagem e conte o que você precisa. A PRIME SERVIÇOS orienta você pelo WhatsApp.</p></div><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large"><img className="whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /> {siteInfo.phone}</a></div></section>
     </div>
   );
 };
 export default Home;
-

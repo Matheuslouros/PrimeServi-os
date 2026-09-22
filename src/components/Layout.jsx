@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { Menu, X, Zap, MessageCircle, Phone, ChevronUp } from "lucide-react";
+import { Menu, X, Zap, MessageCircle, ChevronUp } from "lucide-react";
 import { siteInfo, navLinks } from "../mock";
 
 const Layout = () => {
@@ -38,7 +38,7 @@ const Layout = () => {
           </nav>
 
           <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="header-cta">
-            <MessageCircle /> Orçamento
+            <img className="whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /> Orçamento
           </a>
 
           <button className="mobile-menu-button" onClick={() => setMenuAberto((v) => !v)} aria-label="Abrir menu" aria-expanded={menuAberto}>
@@ -53,7 +53,7 @@ const Layout = () => {
                 {link.label}
               </NavLink>
             ))}
-            <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="mobile-whatsapp">Falar pelo WhatsApp</a>
+            <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="mobile-whatsapp"><img className="whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /> Falar pelo WhatsApp</a>
           </nav>
         )}
       </header>
@@ -63,7 +63,7 @@ const Layout = () => {
       <section className="footer-contact reveal">
         <div className="container footer-contact-grid">
           <div><MessageCircle /><strong>Atendimento direto</strong><span>Fale com a PRIME pelo WhatsApp</span></div>
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer"><Phone /><strong>{siteInfo.phone}</strong><span>Solicite seu orçamento</span></a>
+          <a href={whatsapp} target="_blank" rel="noopener noreferrer"><img className="whatsapp-icon footer-whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /><strong>{siteInfo.phone}</strong><span>Solicite seu orçamento</span></a>
           <div><Zap /><strong>Elétrica + Tecnologia</strong><span>Residencial, industrial e computação</span></div>
         </div>
       </section>
@@ -77,7 +77,7 @@ const Layout = () => {
       </footer>
 
       <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
-        <MessageCircle /> <span>WhatsApp</span>
+        <img className="whatsapp-icon" src="/images/whatsapp-logo.webp" alt="" /> <span>WhatsApp</span>
       </a>
 
       {showTop && <button className="back-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} aria-label="Voltar ao topo"><ChevronUp /></button>}

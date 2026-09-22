@@ -15,17 +15,24 @@ export const navLinks = [
 ];
 export const services = [
   { id:"residencial", icon:"home", title:"Elétrica Residencial", description:"Instalações, manutenção e melhorias elétricas para casas, apartamentos e pequenos comércios.", bullets:["Tomadas e interruptores","Iluminação e circuitos","Quadros e disjuntores","Manutenção e reparos"] },
-  { id:"industrial", icon:"factory", title:"Elétrica Industrial", description:"Serviços elétricos para ambientes industriais, com foco em organização, segurança e manutenção.", bullets:["Infraestrutura elétrica","Organização de cabos","Painéis e circuitos","Manutenção elétrica"] },
+  { id:"industrial", icon:"factory", title:"Elétrica e Instrumentação Industrial", description:"Serviços elétricos e de instrumentação para ambientes industriais, com foco em organização, segurança e manutenção.", bullets:["Infraestrutura elétrica","Instrumentação industrial","Painéis e circuitos","Manutenção elétrica"] },
   { id:"computadores", icon:"monitor", title:"Computação", description:"Montagem, manutenção, upgrades, configuração e organização de computadores e setups.", bullets:["Montagem de PC","Organização de cabos","Limpeza e manutenção","Upgrades e configuração"] },
 ];
 export const galleries = {
  residencial:[
-  {src:"/images/residencial/residencial-01.jpg",title:"Instalação elétrica residencial"},{src:"/images/residencial/residencial-02.jpg",title:"Manutenção de tomadas e interruptores"},{src:"/images/residencial/residencial-03.jpg",title:"Serviço elétrico residencial"},{src:"/images/residencial/residencial-04.jpg",title:"Acabamento e instalação"},{src:"/images/residencial/residencial-05.jpg",title:"Adequação elétrica"}],
+  {src:"/images/residencial/residencial-01.jpg",title:"Instalação elétrica residencial"},{src:"/images/residencial/residencial-02.jpg",title:"Manutenção de tomadas e interruptores"},{src:"/images/residencial/residencial-03.jpg",title:"Serviço elétrico residencial"},{src:"/images/residencial/residencial-04.jpg",title:"Acabamento e instalação"},{src:"/images/residencial/residencial-05.jpg",title:"Adequação elétrica"},{src:"/images/residencial/residencial-06.jpeg",title:"Quadro de distribuição residencial"},{src:"/images/residencial/residencial-07.jpeg",title:"Disjuntores e proteção elétrica"}],
  industrial:[
-  {src:"/images/industrial/industrial-01.jpg",title:"Painel e instrumentação industrial"},{src:"/images/industrial/industrial-02.jpg",title:"Instrumentação e tubulação"},{src:"/images/industrial/industrial-03.jpg",title:"Manutenção industrial"},{src:"/images/industrial/industrial-04.jpg",title:"Painel elétrico industrial"},{src:"/images/industrial/industrial-05.jpg",title:"Comandos e alimentação"}],
+  {src:"/images/industrial/industrial-01.jpg",title:"Painel e instrumentação industrial"},{src:"/images/industrial/industrial-02.jpg",title:"Instrumentação e tubulação"},{src:"/images/industrial/industrial-03.jpg",title:"Manutenção industrial"},{src:"/images/industrial/industrial-04.jpg",title:"Painel elétrico industrial"},{src:"/images/industrial/industrial-05.jpg",title:"Comandos e alimentação"},{src:"/images/industrial/industrial-profissional.jpg",title:"Atuação em ambiente industrial"}],
  computadores:[
   {src:"/images/computadores/pc-01.jpg",title:"Setup completo"},{src:"/images/computadores/pc-02.jpg",title:"Montagem interna"},{src:"/images/computadores/pc-03.jpg",title:"PC com iluminação RGB"},{src:"/images/computadores/pc-04.jpg",title:"Configuração e testes"},{src:"/images/computadores/pc-05.jpg",title:"Montagem gamer"},{src:"/images/computadores/pc-06.jpg",title:"Organização e refrigeração"}]
 };
+export const residentialVideos = [
+ {src:"/videos/residencial/residencial-28.mp4",title:"Serviço elétrico residencial"},
+ {src:"/videos/residencial/residencial-30.mp4",title:"Execução de trabalho residencial"},
+ {src:"/videos/residencial/residencial-36.mp4",title:"Instalação elétrica residencial"},
+ {src:"/videos/residencial/residencial-39.mp4",title:"Manutenção elétrica residencial"},
+ {src:"/videos/residencial/residencial-46.mp4",title:"Trabalho residencial finalizado"}
+];
 export const computerGallery = galleries.computadores.map(x=>({...x,category:"Computação"}));
 export const processSteps=[
  {number:"01",title:"Você chama",text:"Explique pelo WhatsApp qual serviço você precisa."},{number:"02",title:"Entendemos",text:"Avaliamos a necessidade e combinamos os detalhes."},{number:"03",title:"Executamos",text:"Realizamos o serviço com organização e atenção."},{number:"04",title:"Tudo pronto",text:"Você recebe o serviço finalizado e orientações."}
