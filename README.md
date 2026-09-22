@@ -21,3 +21,8 @@ O arquivo `public/logo-prime.svg` é uma identidade provisória em SVG. Substitu
 
 ## WhatsApp
 O número configurado atualmente é `(31) 99544-2069`. Altere `src/mock.js` se precisar usar outro número.
+
+
+## Identidade visual
+- Elétrica: preto + amarelo.
+- Computação: ambiente tecnológico separado em roxo + ciano, incluindo o card de computadores e a galeria de setups.

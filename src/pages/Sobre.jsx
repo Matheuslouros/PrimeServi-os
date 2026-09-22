@@ -1,14 +1,16 @@
 import React from "react";
-import { ShieldCheck, Zap, Wrench, Cpu } from "lucide-react";
+import { Factory, Home as HomeIcon, Monitor, CheckCircle2, ArrowRight, Phone } from "lucide-react";
+import { services, siteInfo } from "../mock";
 
-export default function Sobre() {
+const icons = { home: HomeIcon, factory: Factory, monitor: Monitor };
+
+export default function Servicos() {
+  const whatsapp = `https://wa.me/${siteInfo.phoneRaw}?text=${encodeURIComponent(siteInfo.whatsappMessage)}`;
   return <main className="page-shell section-light">
-    <div className="container page-hero"><span className="section-kicker">Sobre a PRIME</span><h1>Elétrica e tecnologia em um só lugar.</h1><p>A PRIME SERVIÇOS nasce com uma proposta simples: oferecer soluções técnicas para instalações elétricas, manutenção e computadores, com atendimento próximo e execução organizada.</p></div>
-    <div className="container about-grid">
-      <article><Zap /><h2>Energia</h2><p>Serviços elétricos para necessidades residenciais, comerciais e industriais.</p></article>
-      <article><Cpu /><h2>Tecnologia</h2><p>Montagem, organização e manutenção de computadores e setups.</p></article>
-      <article><Wrench /><h2>Manutenção</h2><p>Diagnóstico e correções buscando segurança e funcionamento adequado.</p></article>
-      <article><ShieldCheck /><h2>Organização</h2><p>Comunicação clara e atenção aos detalhes durante o serviço.</p></article>
+    <div className="container page-hero"><span className="section-kicker">PRIME SERVIÇOS</span><h1>Serviços elétricos e tecnologia.</h1><p>Escolha uma categoria para entender o que podemos fazer pelo seu ambiente, instalação ou computador.</p></div>
+    <div className="container service-page-grid">
+      {services.map((service, index) => { const Icon = icons[service.icon]; return <article className={`big-service-card ${service.id === "computadores" ? "big-service-card-tech" : ""}`} key={service.id}><div className="big-service-top"><span className="service-icon"><Icon /></span><span>0{index + 1}</span></div><h2>{service.title}</h2><p>{service.description}</p><ul>{service.bullets.map((b) => <li key={b}><CheckCircle2 />{b}</li>)}</ul><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-dark"><Phone /> Solicitar orçamento</a></article>; })}
     </div>
+    <div className="container service-note"><ArrowRight /><div><strong>Não encontrou o serviço?</strong><span>Chame no WhatsApp e explique o que você precisa.</span></div><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Falar com a PRIME</a></div>
   </main>;
 }
